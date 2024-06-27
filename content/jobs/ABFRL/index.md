@@ -1,12 +1,13 @@
 ---
-date: '2023-07-05'
-title: 'Employer Branding Intern'
-company: 'ABFRL'
-location: 'Remote'
-range: 'July - September 2023'
-url: 'https://abfrl.com/'
+date: '2023-09-27'
+title: 'Cloud & DevOps Engineer'
+company: 'KelpGlobal'
+location: 'Mumbai'
+range: 'September 2023 - Present'
+url: 'https://kelpglobal.com/'
 ---
 
-- Amplified the STRIDES program value, aiding potential recruits in understanding career growth opportunities
-- Developed strategic Campus Engagement deliverables for leadership talks as part of the Young Talent Management (YTM) team
-- Enhanced recruitment by 37% by promoting the STRIDE program & leading campus initiatives on LinkedIn
+- Kubernetes cluster Management using Helm on AKS,
+- Developed Automation of Crucial tasks reducing manual overhead by 25%.
+- Cloud Services Management of Storage and IAM on Azure and AWS.
+- Performance Testing of Application via Jmeter, Infrastructure Alerting and Monitoring via Prometheus, Grafana and NewRelic

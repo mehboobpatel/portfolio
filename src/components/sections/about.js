@@ -125,8 +125,8 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Market Research', 'Data Analysis', 'Brand Management', 'Digital Marketing', 
-  'SPSS', 'Tableau', 'MS Office', 'Python'];
+  const skills = ['Kubernetes', 'Bash Scripting', 'Docker', 'Azure DevOps & Jenkins', 
+  'IaC Terraform & CDK', 'Observability', 'Git/Github', 'Python','AWS/GCP/Azure', 'ElasticSearch'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -136,29 +136,21 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-            With a core specialization in Marketing &amp; Strategy, I've orchestrated impactful
-             strategies in brand perceptions during my MBA summer internship for {' '}
-             <a href="https://www.tatastructura.com">Tata Structura</a> {' '} at{' '} 
-             <a href="https://drive.google.com/file/d/1xhGTFz7pe6kP7bZ4peDgJ7hlG630K8rz/view?usp=sharing">Tata Steel</a>.
+            As a {' '}Cloud &amp; DevOps Engineer {' '} at {' '}
+            <a href="https://www.kelpglobal.com">KelpGlobal</a> {' '}, I've managed Kubernetes Cluster and Cloud Services
+            alongside robust Jenkins CI/CD pipeline setup and observability across various environments.
             </p>
 
             <p>
-            I also spearheaded employer branding initiatives for {' '}
-            <a href="https://drive.google.com/file/d/1w-uN9jb86pxFXPYMDu_78P-d1CZJAx3V/view?usp=sharing">
-              Aditya Birla Fashion and Retail</a>, {' '} resulting in a remarkable 37% surge in consumer engagement 
-              during my remote live project as part of my MBA journey.
+            During my tenure {' '} as a Data Engineer Intern at <a href="https://ataloud.com/">Ataloud (Lauren Infotech) </a>, {' '} 
+            honed my skills in SQL and PySpark for data cleaning and schema optimization. I applied Apache Spark in Databricks to integrate diverse APIs. {' '} 
+            {/* <a href="https://drive.google.com/file/d/16BGu5InZZDGCtoWas560ezwKsgVBKbI9/view?usp=sharing">Innovation Agents</a>. */}
             </p>
 
             <p>
-            During my tenure at {' '} <a href="https://www.amdocs.com">Amdocs</a>, {' '} 
-            where I served as a Software Developer, I had the honor of being selected as one of 16 elite {' '} 
-            <a href="https://drive.google.com/file/d/16BGu5InZZDGCtoWas560ezwKsgVBKbI9/view?usp=sharing">Innovation Agents</a>.
-            </p>
-
-            <p>
-            Moreover, my role as a {' '} <a href="https://drive.google.com/file/d/1iRTZfE7v5Y99BYZVxevaGBVtF90t-TOb/view?usp=sharing">
-              Placement Coordinator</a> {' '} at IIM Rohtak saw me cultivate over 30 new corporate relationships, culminating in a 
-              remarkable 42% boost in campus placements.
+            Apart from Technical i also worked as a {' '} <a href="https://azureblogathon.com/">Developer Evangelist for
+            Microsoft Azure Blogathon</a> {' '} where I cultivated relationships with developers, cloud engineers, and architects. 
+            My effective communication and presentation skills were pivotal in driving successful community Engagements
             </p>
 
             <p>My skills are not limited to this list!</p>

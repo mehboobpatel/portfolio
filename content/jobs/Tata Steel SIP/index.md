@@ -1,13 +1,13 @@
 ---
-date: '2023-04-17'
-title: 'Sales & Marketing Intern'
-company: 'Tata Steel'
-location: 'Kolkata, India'
-range: 'April - June 2023'
-url: 'https://tatasteel.com/'
+date: '2020-05-30'
+title: 'Data Engineering Intern'
+company: 'Second (Lauren)'
+location: 'Remote'
+range: 'April 2023 - June 2023'
+url: 'https://ataloud.com/'
 ---
 
-- Conducted a gap analysis of end consumers’ brand perceptions on Tata Structura in Kolkata and its nearby regions
-- Devised retail brand re-positioning strategy using 30+ dealers and 80+ end consumer insights gathered
-- Led re-branding efforts with logo and tagline revamp, bolstered by YouTube ads and positive consumer stories
-- Bagged a Pre-Placement Offer (PPO) among the top talents due to exceptional performance during the internship stint
+- Managed the Development & User Acceptance Testing (UAT) of Real-Time-Billing (RTB) for Canada’s largest telecom service provider
+- Implemented RTB-NM1 Customization for improving the legacy tele-billing software for handling daily transactions
+- Led the development of Amdocs BSS-B2B telecom billing software as an associate developer in the core R&D team
+- Recognized as Star of the Month thrice for exceptional performance in the NM1-RTB client customization project

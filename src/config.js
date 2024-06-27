@@ -1,14 +1,14 @@
 module.exports = {
-  email: 'chandrikadeb7@gmail.com',
+  email: 'maheboobpatel446@gmail.com',
 
   socialMedia: [
     {
       name: 'GitHub',
-      url: 'https://github.com/chandrikadeb7',
+      url: 'https://github.com/mehboobpatel',
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/chandrikadeb7',
+      url: 'https://www.instagram.com/mehboob_mad1',
     },
     {
       name: 'Twitter',
@@ -16,7 +16,7 @@ module.exports = {
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/chandrika-deb',
+      url: 'https://www.linkedin.com/in/maheboob-patel',
     },
     {
       name: 'Codepen',

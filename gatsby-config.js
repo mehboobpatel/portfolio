@@ -2,7 +2,7 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Chandrika Deb',
+    title: 'Maheboob Patel',
     description:
       'Chandrika Deb is an IIM alumnus who spearheads marketing initiatives at Tata Steel and is also a freelance tech blogger.',
     siteUrl: 'https://chandrikadeb7.github.io', // No trailing slash allowed!
@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Chandrika Deb',
-        short_name: 'Chandrika Deb',
+        name: 'Maheboob Patel',
+        short_name: 'Maheboob Patel',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,

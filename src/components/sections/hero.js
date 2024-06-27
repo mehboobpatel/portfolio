@@ -60,8 +60,8 @@ const Hero = () => {
   }, []);
 
   const one = <h1>Namaste! My name is</h1>;
-  const two = <h2 className="big-heading">Chandrika Deb</h2>;
-  const three = <h3 className="medium-heading">MBA | Marketing Enthusiast | Freelance Blogger</h3>;
+  const two = <h2 className="big-heading">Maheboob Patel</h2>;
+  const three = <h3 className="medium-heading"> DevOps | Data | DevRel </h3>;
   const four = (
     <>
       <p>
@@ -69,9 +69,9 @@ const Hero = () => {
       </p>
 
       <p>
-        I am Chandrika Deb, an alumnus of {' '} <a href="http://www.iimrohtak.ac.in">
-        IIM Rohtak</a> {' '} and {' '} <a href="https://www.bitmesra.ac.in">BIT Mesra</a> {' '} currently spearheading impactful marketing initiatives at {' '}
-        <a href="https://www.tatasteel.com">Tata Steel</a>.
+        I am passionate Cloud and DevOps engineer , a National Level Winner for {' '} <a href="https://adlchallenge.in/">
+        Microsoft Azure India</a> {' '} and a MCA PostGrad from {' '} <a href="https://www.timscdrmumbai.in/">Thakur Institute</a> {' '} currently spearheading impactful deployment operations at {' '}
+        <a href="https://www.kelpglobal.com">KelpGlobal</a>.
       </p>
 
 

@@ -1,13 +1,13 @@
 ---
-date: '2022-02-05'
-title: 'Freelance Technical Writer'
-company: 'LambdaTest'
+date: '2022-09-19'
+title: 'Developer Evangelist '
+company: 'Id8nxt (Microsoft Azure Blogathon)'
 location: 'Remote'
-range: 'Feb 2022 - Present'
-url: 'https://www.lambdatest.com/'
+range: 'Sept 2022 - March 2023'
+url: 'https://id8nxt.com/'
 ---
 
-- Published high quality SEO optimised blogs and articles on topics like CI/CD, DevOps, Selenium, LambdaTest integrations, Cross-Browser testing, and How-to tutorials
-- 400,000+ views on the following published articles:
-- [Streamline Your Development Process With Google Cloud CI/CD Pipeline](https://www.lambdatest.com/blog/google-cloud-ci-cd-pipeline/)
-- [Getting Started With DevOps – A Beginner’s Guide](https://www.lambdatest.com/blog/getting-started-with-devops/)
+- Managed the Camapign Design & User Experience by colloborating with different teams
+- Cultivated relationships with developers, cloud engineers, and architects.
+- Understanding a Variety of Solution Architecures for alignment with the Theme and Problem Statement 
+- Effective communication and presentation skills were pivotal in driving successful campaign and Community engagement 
