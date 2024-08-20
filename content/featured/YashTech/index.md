@@ -1,15 +1,13 @@
 ---
 date: '1'
-title: 'La Dérma: Beauty with AI'
-cover: './yash.png'
-github: 'https://github.com/chandrikadeb7/La-Derma'
-external: 'https://docs.google.com/presentation/d/1q-de17co3sbWG5tAgwR_O8jbMF_tyaIn_Sgyzeg9uuI/edit?usp=sharing'
+title: 'Azure Secured Receptionist'
+cover: './arch.png'
+github: 'https://github.com/mehboobpatel/AzurePaasReceptionist'
+external: 'https://receptionist.azurewebsites.net/'
 tech:
   - Python
-  - JavaScript
-  - React
-  - OpenCV
-  - TensorFlow
+  - Azure DevOps
+  - Azure PaaS
+  - Github Actions
 ---
-
-An application that recommends personalised skincare and makeup products based on the skin metrics inferred from user’s selfie, using Computer Vision algorithms submitted for Yash Technologies Case Competition **TechnoThrive**.
+• A WebApp Deployed with secure practices via **NO credential details exposed in env files or in code**. its use is for Company’s Reception Register with custome welcome audio of visitor.

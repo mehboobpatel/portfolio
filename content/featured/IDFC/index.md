@@ -1,16 +1,13 @@
 ---
 date: '2'
-title: 'iIFA: Integrated IDFC First Assistant'
-cover: './idfc.png'
-external: 'https://docs.google.com/presentation/d/1VBxFohznvvVg8Kxf5CPwx2UAgbv2ReTx6vzcp8A7u70/edit?usp=sharing'
+title: 'Mailing Automation - Azure Functions'
+cover: './arch.png'
+external: 'https://github.com/mehboobpatel/mailingautomation/blob/main/SolutionArchitecture.pdf'
 tech:
-  - Review Scraping
-  - User Persona
-  - Figma
-  - GTM
-  - RICE
+  - Azure Functions
+  - Python
+  - Blob 
+  - SendGrid
 ---
 
-Banking Application Enhancement for increased engagement time/customer for **IDFC FAME Product Track** Bschool Case Competition
-
-Proposed enhanced chatbot, unique spending options beneficial for users, and geolocation based cashbacks and coupons reward store prompts
+Developed an automated email handling system leveraging **Azure Functions, Key Vault, Blob Storage, and SQL Database.** Ensured  security by retrieving sensitive data from Key Vault, preventing credential exposure. The solution **reduced mailing costs by 2X** and significantly improved internal communication efficiency

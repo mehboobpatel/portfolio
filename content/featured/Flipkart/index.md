@@ -1,7 +1,7 @@
 ---
 date: '3'
 title: 'Voice Receptionist on Azure '
-cover: './flipkart.png'
+cover: './arch.web'
 external: 'https://docs.google.com/presentation/d/1ELoytkCyrR6PysGE34kiz_b6PXTBmbf_SWKGwSu9SeE/edit?usp=sharing'
 cta: 'https://chandrikadeb7.gumroad.com/l/mbaSlides?layout=profile'
 tech:

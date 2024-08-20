@@ -8,11 +8,11 @@ module.exports = {
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/mehboob_mad1',
+      url: 'https://www.instagram.com/techbymaddy',
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/chandrikadeb7',
+      url: 'https://twitter.com/maheboob__patel',
     },
     {
       name: 'Linkedin',
@@ -20,7 +20,7 @@ module.exports = {
     },
     {
       name: 'Codepen',
-      url: 'https://codepen.io/chandrikadeb7',
+      url: 'https://codepen.io/',
     },
   ],
 
