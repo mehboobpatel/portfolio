@@ -7,7 +7,8 @@ import sr from '@utils/sr';
 import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
 
-const StyledProjectsSection = styled.section`
+
+const StyledCertSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,18 +25,6 @@ const StyledProjectsSection = styled.section`
     }
   }
 
-  .projects-grid {
-    ${({ theme }) => theme.mixins.resetList};
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 15px;
-    position: relative;
-    margin-top: 50px;
-
-    @media (max-width: 1080px) {
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
-  }
 
     .cert-grid {
     ${({ theme }) => theme.mixins.resetList};
@@ -56,7 +45,7 @@ const StyledProjectsSection = styled.section`
   }
 `;
 
-const StyledProject = styled.li`
+const StyledCert = styled.li`
   position: relative;
   cursor: default;
   transition: var(--transition);
@@ -64,7 +53,7 @@ const StyledProject = styled.li`
   @media (prefers-reduced-motion: no-preference) {
     &:hover,
     &:focus-within {
-      .project-inner {
+      .cert-inner {
         transform: translateY(-7px);
       }
     }
@@ -75,7 +64,7 @@ const StyledProject = styled.li`
     z-index: 1;
   }
 
-  .project-inner {
+  .cert-inner {
     ${({ theme }) => theme.mixins.boxShadow};
     ${({ theme }) => theme.mixins.flexBetween};
     flex-direction: column;
@@ -89,7 +78,7 @@ const StyledProject = styled.li`
     overflow: auto;
   }
 
-  .project-top {
+  .cert-top {
     ${({ theme }) => theme.mixins.flexBetween};
     margin-bottom: 35px;
 
@@ -101,7 +90,15 @@ const StyledProject = styled.li`
       }
     }
 
-    .project-links {
+      .certicon {
+      color: var(--green);
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .cert-links {
       display: flex;
       align-items: center;
       margin-right: -10px;
@@ -127,7 +124,7 @@ const StyledProject = styled.li`
     }
   }
 
-  .project-title {
+  .cert-title {
     margin: 0 0 10px;
     color: var(--lightest-slate);
     font-size: var(--fz-xxl);
@@ -148,7 +145,7 @@ const StyledProject = styled.li`
     }
   }
 
-  .project-description {
+  .cert-description {
     color: var(--light-slate);
     font-size: 17px;
 
@@ -157,7 +154,7 @@ const StyledProject = styled.li`
     }
   }
 
-  .project-tech-list {
+  .cert-tech-list {
     display: flex;
     align-items: flex-end;
     flex-grow: 1;
@@ -178,13 +175,13 @@ const StyledProject = styled.li`
   }
 `;
 
-const Projects = () => {
+const Cert = () => {
   const data = useStaticQuery(graphql`
     query {
-      projects: allMarkdownRemark(
+      cert: allMarkdownRemark(
         filter: {
-          fileAbsolutePath: { regex: "/content/projects/" }
-          frontmatter: { showInProjects: { ne: false } }
+          fileAbsolutePath: { regex: "/content/cert/" }
+          frontmatter: { showInCert: { ne: false } }
         }
         sort: { fields: [frontmatter___date], order: DESC }
       ) {
@@ -206,7 +203,7 @@ const Projects = () => {
   const [showMore, setShowMore] = useState(false);
   const revealTitle = useRef(null);
   const revealArchiveLink = useRef(null);
-  const revealProjects = useRef([]);
+  const revealCert = useRef([]);
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
@@ -216,26 +213,27 @@ const Projects = () => {
 
     sr.reveal(revealTitle.current, srConfig());
     sr.reveal(revealArchiveLink.current, srConfig());
-    revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
+    revealCert.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
   }, []);
 
   const GRID_LIMIT = 6;
-  const projects = data.projects.edges.filter(({ node }) => node);
-  const firstSix = projects.slice(0, GRID_LIMIT);
-  const projectsToShow = showMore ? projects : firstSix;
+  const cert = data.cert.edges.filter(({ node }) => node);
+  const firstSix = cert.slice(0, GRID_LIMIT);
+  const certToShow = showMore ? cert : firstSix;
 
-  const projectInner = node => {
+  const certInner = node => {
     const { frontmatter, html } = node;
     const { github, external, title, tech } = frontmatter;
 
     return (
-      <div className="project-inner">
+      <div className="cert-inner">
         <header>
-          <div className="project-top">
-            <div className="folder">
-              <Icon name="Folder" />
+          <div className="cert-top">
+            <div className="certicon">
+              <Icon name="Certification" />
             </div>
-            <div className="project-links">
+
+            <div className="cert-links">
               {github && (
                 <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
                   <Icon name="GitHub" />
@@ -252,74 +250,65 @@ const Projects = () => {
                 </a>
               )}
             </div>
+            
           </div>
 
-          <h3 className="project-title">
+          <h3 className="cert-title">
             <a href={external} target="_blank" rel="noreferrer">
               {title}
             </a>
           </h3>
 
-          <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
         </header>
 
-        <footer>
-          {tech && (
-            <ul className="project-tech-list">
-              {tech.map((tech, i) => (
-                <li key={i}>{tech}</li>
-              ))}
-            </ul>
-          )}
-        </footer>
       </div>
     );
   };
 
   return (
-    <StyledProjectsSection>
-      <h2 ref={revealTitle}>Projects</h2>
+    <StyledCertSection>
+      <h2 ref={revealTitle}>Certifications</h2>
 
       <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
         View Archive
       </Link>
 
-      <ul className="projects-grid">
+      <ul className="cert-grid">
         {prefersReducedMotion ? (
           <>
-            {projectsToShow &&
-              projectsToShow.map(({ node }, i) => (
-                <StyledProject key={i}>{projectInner(node)}</StyledProject>
+            {certToShow &&
+              certToShow.map(({ node }, i) => (
+                <StyledCert key={i}>{certInner(node)}</StyledCert>
               ))}
           </>
         ) : (
           <TransitionGroup component={null}>
-            {projectsToShow &&
-              projectsToShow.map(({ node }, i) => (
+            {certToShow &&
+              certToShow.map(({ node }, i) => (
                 <CSSTransition
                   key={i}
                   classNames="fadeup"
                   timeout={i >= GRID_LIMIT ? (i - GRID_LIMIT) * 300 : 300}
                   exit={false}>
-                  <StyledProject
+                  <StyledCert
                     key={i}
-                    ref={el => (revealProjects.current[i] = el)}
+                    ref={el => (revealCert.current[i] = el)}
                     style={{
                       transitionDelay: `${i >= GRID_LIMIT ? (i - GRID_LIMIT) * 100 : 0}ms`,
                     }}>
-                    {projectInner(node)}
-                  </StyledProject>
+                    {certInner(node)}
+                  </StyledCert>
                 </CSSTransition>
               ))}
           </TransitionGroup>
         )}
       </ul>
 
-      {/* <button className="more-button" onClick={() => setShowMore(!showMore)}>
+      <button className="more-button" onClick={() => setShowMore(!showMore)}>
         Show {showMore ? 'Less' : 'More'}
-      </button>       */}
-    </StyledProjectsSection>
+      </button>      
+    </StyledCertSection>
   );
 };
 
-export default Projects;
+export default Cert;

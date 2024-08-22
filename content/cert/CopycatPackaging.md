@@ -8,7 +8,7 @@ tech:
   - Grafana
   - Alertmanager
 company: 'Project'
-showInProjects: true
+showInCert: true
 ---
 
 Scraping Syslogs and metrics for resource usage and alerting if any critical threshold is reached via Slack Messaging

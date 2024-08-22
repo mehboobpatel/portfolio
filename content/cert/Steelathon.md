@@ -8,7 +8,7 @@ tech:
   - AWS CDK (TS)
   - Go Script
 company: 'Project'
-showInProjects: true
+showInCert: true
 ---
 
 Deploying resources using Terraform, AWS CDK and also via script in Go lang by using AWS SDK in the code.

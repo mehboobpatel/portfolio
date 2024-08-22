@@ -8,7 +8,7 @@ tech:
   - Digital Marketing
   - Insight Generation
 company: 'Certification'
-showInProjects: false
+showInCert: false
 ---
 
 Understood how to set up and structure a property, and use various reporting tools and features for better marketing decisions

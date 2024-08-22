@@ -8,7 +8,7 @@ tech:
   - GraphQL
   - Gatsby
 company: 'Project'
-showInProjects: true
+showInCert: true
 ---
 
 Personal portfolio website hosted on GitHub Pages inspired by Brittany Chiang's V4 template

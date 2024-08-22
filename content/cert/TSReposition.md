@@ -7,7 +7,7 @@ tech:
   - Elastic
   - Kibana
 company: 'Project'
-showInProjects: true
+showInCert: true
 ---
 
  Setting up ELK Stack on cloud via Kubernetes for Cluster Monitoring 

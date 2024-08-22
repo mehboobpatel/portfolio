@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import IconCertification from '../icons/certificate';
+
 import {
   IconAppStore,
   IconBookmark,
@@ -29,6 +31,8 @@ const Icon = ({ name }) => {
       return <IconExternal />;
     case 'Folder':
       return <IconFolder />;
+    case 'Certification':
+     return <IconCertification />;
     case 'Fork':
       return <IconFork />;
     case 'GitHub':

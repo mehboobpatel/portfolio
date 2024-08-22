@@ -8,7 +8,7 @@ tech:
   - TQM
   - Process Improvement
 company: 'Certification'
-showInProjects: true
+showInCert: true
 ---
 
 Understood the fundamentals of Six Sigma along with project implementations

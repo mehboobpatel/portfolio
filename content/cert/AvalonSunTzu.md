@@ -9,7 +9,7 @@ tech:
   - CPVC/UPVC Industry
   - Market Entry
 company: 'Case Competition'
-showInProjects: true
+showInCert: true
 ---
 
 Can a hypothetical company Prime Corporation enter the CPVC/UPVC market succesfully?
