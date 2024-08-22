@@ -29,7 +29,7 @@ const StyledCertSection = styled.section`
     .cert-grid {
     ${({ theme }) => theme.mixins.resetList};
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 15px;
     position: relative;
     margin-top: 50px;
@@ -71,6 +71,7 @@ const StyledCert = styled.li`
     align-items: flex-start;
     position: relative;
     height: 100%;
+    width: 100%;
     padding: 2rem 1.75rem;
     border-radius: var(--border-radius);
     background-color: var(--light-navy);
@@ -80,21 +81,12 @@ const StyledCert = styled.li`
 
   .cert-top {
     ${({ theme }) => theme.mixins.flexBetween};
-    margin-bottom: 35px;
-
-    .folder {
-      color: var(--green);
-      svg {
-        width: 40px;
-        height: 40px;
-      }
-    }
 
       .certicon {
       color: var(--green);
       svg {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
       }
     }
 
@@ -117,20 +109,25 @@ const StyledCert = styled.li`
         }
 
         svg {
-          width: 20px;
-          height: 20px;
+          width: 30px;
+          height: 30px;
         }
       }
     }
   }
 
   .cert-title {
-    margin: 0 0 10px;
+    margin: 0px;
+    margin-left: 25px;
+    margin-right: 25px;
     color: var(--lightest-slate);
     font-size: var(--fz-xxl);
+    display: flex;
+    align-items: center;
 
     a {
       position: static;
+      margin-left: 10px;
 
       &:before {
         content: '';
@@ -216,7 +213,7 @@ const Cert = () => {
     revealCert.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
   }, []);
 
-  const GRID_LIMIT = 6;
+  const GRID_LIMIT = 4;
   const cert = data.cert.edges.filter(({ node }) => node);
   const firstSix = cert.slice(0, GRID_LIMIT);
   const certToShow = showMore ? cert : firstSix;
@@ -231,8 +228,13 @@ const Cert = () => {
           <div className="cert-top">
             <div className="certicon">
               <Icon name="Certification" />
+              
             </div>
-
+            <h3 className="cert-title">
+            <a href={external} target="_blank" rel="noreferrer">
+              {title}
+            </a>
+          </h3>
             <div className="cert-links">
               {github && (
                 <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
@@ -253,11 +255,7 @@ const Cert = () => {
             
           </div>
 
-          <h3 className="cert-title">
-            <a href={external} target="_blank" rel="noreferrer">
-              {title}
-            </a>
-          </h3>
+
 
         </header>
 

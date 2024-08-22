@@ -1,6 +1,6 @@
 ---
 date: '2023-11-20'
-title: 'Elastic Setup on Cloud Kubernetes'
+title: 'GCP CDL'
 github: ''
 external: 'https://github.com/mehboobpatel/Elastic-setup-k8s'
 tech:

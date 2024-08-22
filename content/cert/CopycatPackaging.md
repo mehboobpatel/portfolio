@@ -1,6 +1,6 @@
 ---
 date: '2024-02-01'
-title: 'Server Monitoring and Alerting(Slack Integration)'
+title: 'DP 900'
 github: ''
 external: 'https://github.com/mehboobpatel/PrometheusGrafana/blob/master/README.md'
 tech:
