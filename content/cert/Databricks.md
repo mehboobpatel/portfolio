@@ -1,8 +1,8 @@
 ---
-date: '2023-08-01'
-title: 'Avalon Consulting: Sun Tzu Case Study 2023'
+date: '2023-08-21'
+title: 'Databricks Lakehouse'
 github: ''
-external: 'https://docs.google.com/presentation/d/1gpdKIeqhw4rpUXoTCgbmC8WMSSU-B2uOYhLG_6__wOs/edit?usp=sharing'
+external: 'https://credentials.databricks.com/0154410e-6024-49e6-be08-d233d361a063'
 tech:
   - Consulting
   - Issue Tree

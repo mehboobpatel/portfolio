@@ -1,14 +1,14 @@
 ---
-date: '2024-02-15'
-title: 'Google Ads Display'
+date: '2024-02-01'
+title: 'GCP ACE'
 github: ''
-external: 'https://skillshop.credential.net/9b32f9c9-0332-4b0d-982c-29a78b3d3e80'
+external: 'https://google.accredible.com/3ec738bf-3dcd-4ca5-b9f8-5766b47f4da7'
 tech:
   - Display Ads
   - Digital Marketing
   - Campaign
 company: 'Certification'
-showInProjects: false
+showInCert: true
 ---
 
 Understood to develop effective Display Ads strategies and campaigns that achieve specific marketing goals like awareness, action, retention, and budget

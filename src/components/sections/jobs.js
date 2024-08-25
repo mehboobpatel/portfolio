@@ -150,10 +150,21 @@ const StyledTabPanel = styled.div`
     font-size: var(--fz-xxl);
     font-weight: 500;
     line-height: 1.3;
+    white-space: nowrap;
 
     .company {
       color: var(--green);
+      white-space: nowrap;
     }
+
+    .lor {
+     margin-left: 10px;
+      color: var(--green);
+    }
+    
+    
+    
+    
   }
 
   .range {
@@ -161,6 +172,8 @@ const StyledTabPanel = styled.div`
     color: var(--light-slate);
     font-family: var(--font-mono);
     font-size: var(--fz-xs);
+    display: flex;
+    align-items: center;
   }
 `;
 
@@ -176,6 +189,8 @@ const Jobs = () => {
             frontmatter {
               title
               company
+              lorname
+              lorurl
               location
               range
               url
@@ -273,7 +288,7 @@ const Jobs = () => {
           {jobsData &&
             jobsData.map(({ node }, i) => {
               const { frontmatter, html } = node;
-              const { title, url, company, range } = frontmatter;
+              const { title, url, company,lorname,lorurl, range } = frontmatter;
 
               return (
                 <CSSTransition key={i} in={activeTabId === i} timeout={250} classNames="fade">
@@ -294,7 +309,15 @@ const Jobs = () => {
                       </span>
                     </h3>
 
-                    <p className="range">{range}</p>
+                    <p className="range">{range} 
+                      <h3>
+                      <span className="lor">
+                        <a href={lorurl} className="inline-link">
+                          {lorname}
+                        </a>
+                      </span>
+                      </h3>
+                    </p>
 
                     <div dangerouslySetInnerHTML={{ __html: html }} />
                   </StyledTabPanel>

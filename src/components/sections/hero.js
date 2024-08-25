@@ -76,9 +76,7 @@ const Hero = () => {
 
 
       <p>
-        When not decoding the customer journey, you can find me sketching on {' '}
-        <a href="https://pin.it/4W1Rxtj">Pinterest</a> {' '} or writing technical blogs for {' '}
-        <a href="https://www.lambdatest.com">LambdaTest</a> {' '} and other freelance clients.
+      When not on tech , you'll find me playing{' '} 🎹 melodies{' '} or chasing breathtaking{' '} 🌅 sunsets{' '}.
       </p>
     </>
   );

@@ -1,13 +1,13 @@
 ---
 date: '2023-11-20'
-title: 'Elastic Setup on Cloud Kubernetes'
+title: 'GCP CDL'
 github: ''
-external: 'https://github.com/mehboobpatel/Elastic-setup-k8s'
+external: 'https://google.accredible.com/3ec738bf-3dcd-4ca5-b9f8-5766b47f4da7'
 tech:
   - Elastic
   - Kibana
 company: 'Project'
-showInProjects: true
+showInCert: true
 ---
 
  Setting up ELK Stack on cloud via Kubernetes for Cluster Monitoring 

@@ -1,6 +1,6 @@
 ---
 date: '2023-08-20'
-title: 'GCP ACE'
+title: 'Infrastructure as Code'
 github: ''
 external: 'https://github.com/mehboobpatel/Iac'
 tech:
@@ -8,7 +8,8 @@ tech:
   - AWS CDK (TS)
   - Go Script
 company: 'Project'
-showInCert: true
+showInProjects: true
+
 ---
 
 Deploying resources using Terraform, AWS CDK and also via script in Go lang by using AWS SDK in the code.

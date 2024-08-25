@@ -2,6 +2,8 @@
 date: '2023-09-27'
 title: 'Cloud & DevOps Engineer'
 company: 'KelpGlobal'
+lorname: " "
+lorurl: " "
 location: 'Mumbai'
 range: 'September 2023 - Present'
 url: 'https://kelpglobal.com/'

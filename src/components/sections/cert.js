@@ -46,6 +46,7 @@ const StyledCertSection = styled.section`
 `;
 
 const StyledCert = styled.li`
+
   position: relative;
   cursor: default;
   transition: var(--transition);
@@ -69,9 +70,11 @@ const StyledCert = styled.li`
     ${({ theme }) => theme.mixins.flexBetween};
     flex-direction: column;
     align-items: flex-start;
+    display: block;
     position: relative;
     height: 100%;
     width: 100%;
+    margin-right:300px;
     padding: 2rem 1.75rem;
     border-radius: var(--border-radius);
     background-color: var(--light-navy);
@@ -80,7 +83,10 @@ const StyledCert = styled.li`
   }
 
   .cert-top {
+
     ${({ theme }) => theme.mixins.flexBetween};
+     display: flex;
+     flex-wrap:nowrap;
 
       .certicon {
       color: var(--green);
@@ -93,7 +99,9 @@ const StyledCert = styled.li`
     .cert-links {
       display: flex;
       align-items: center;
-      margin-right: -10px;
+      margin-left: auto; /* Move to the far right */
+
+      // margin-right: -10px;
       color: var(--light-slate);
 
       a {
@@ -117,13 +125,15 @@ const StyledCert = styled.li`
   }
 
   .cert-title {
-    margin: 0px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin: 0 auto;
     color: var(--lightest-slate);
     font-size: var(--fz-xxl);
-    display: flex;
-    align-items: center;
+    text-align: center;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    flex: 1; /* Allow title to take up remaining space */
+    padding: 0 10px; /* Add padding for spacing */
 
     a {
       position: static;
@@ -142,34 +152,6 @@ const StyledCert = styled.li`
     }
   }
 
-  .cert-description {
-    color: var(--light-slate);
-    font-size: 17px;
-
-    a {
-      ${({ theme }) => theme.mixins.inlineLink};
-    }
-  }
-
-  .cert-tech-list {
-    display: flex;
-    align-items: flex-end;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 20px 0 0 0;
-    list-style: none;
-
-    li {
-      font-family: var(--font-mono);
-      font-size: var(--fz-xxs);
-      line-height: 1.75;
-
-      &:not(:last-of-type) {
-        margin-right: 15px;
-      }
-    }
-  }
 `;
 
 const Cert = () => {
@@ -186,8 +168,6 @@ const Cert = () => {
           node {
             frontmatter {
               title
-              tech
-              github
               external
             }
             html
@@ -220,7 +200,7 @@ const Cert = () => {
 
   const certInner = node => {
     const { frontmatter, html } = node;
-    const { github, external, title, tech } = frontmatter;
+    const { external, title } = frontmatter;
 
     return (
       <div className="cert-inner">
@@ -236,11 +216,7 @@ const Cert = () => {
             </a>
           </h3>
             <div className="cert-links">
-              {github && (
-                <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
-                  <Icon name="GitHub" />
-                </a>
-              )}
+
               {external && (
                 <a
                   href={external}

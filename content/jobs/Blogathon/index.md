@@ -2,6 +2,8 @@
 date: '2022-09-19'
 title: 'Developer Evangelist '
 company: 'Id8nxt (Microsoft Azure Blogathon)'
+lorname: "LOR"
+lorurl: "https://drive.google.com/file/d/1UUdyo5opJoeYb5P-nxBPxuTjIZ_uF4i0/view?usp=drive_link"
 location: 'Remote'
 range: 'Sept 2022 - March 2023'
 url: 'https://id8nxt.com/'

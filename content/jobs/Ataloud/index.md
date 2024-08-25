@@ -2,6 +2,8 @@
 date: '2023-04-30'
 title: 'Data Engineering Intern'
 company: 'Ataloud (Lauren)'
+lorname: "LOR"
+lorurl: "https://drive.google.com/file/d/1HCUTAzhzds2v3G0LVkZNGewHCtyvLqYv/view?usp=drive_link"
 location: 'Remote'
 range: 'April 2023 - June 2023'
 url: 'https://ataloud.com/'
