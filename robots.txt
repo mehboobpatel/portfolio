@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://mehboobpatel.github.io/sitemap-index.xml
+Host: https://mehboobpatel.github.io
