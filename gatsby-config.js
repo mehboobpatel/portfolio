@@ -5,7 +5,8 @@ module.exports = {
     title: 'Maheboob Patel',
     description:
       'Chandrika Deb is an IIM alumnus who spearheads marketing initiatives at Tata Steel and is also a freelance tech blogger.',
-    siteUrl: 'https://mehboobpatel.github.io', // No trailing slash allowed!
+    siteUrl: 'https://portfolio', // No trailing slash allowed!
+    image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@maheboo_patel',
   },
   plugins: [

@@ -2,10 +2,10 @@
   "name": "v2",
   "description": "Personal Website V2",
   "version": "1.0.0",
-  "author": "Maheboob Patel <maheboobpatel446@gmail.com>",
+  "author": "Maheboob Patel <masterpatel786@yahoo.in>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mehboobpatel"
+    "url": "https://github.com/mehboobpatel/portfolio"
   },
   "keywords": [
     "gatsby"
@@ -73,6 +73,7 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.23.2",
     "gatsby-remark-code-titles": "^1.1.0",
+    "gh-pages": "^6.1.1",
     "husky": "^6.0.0",
     "lint-staged": "^10.1.2",
     "prettier": "^2.2.1"
