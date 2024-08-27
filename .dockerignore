@@ -1,0 +1,19 @@
+# Node modules (should be installed inside the container)
+node_modules
+public
+.cache
+.github
+
+.husky
+
+
+.gitignore
+.dockerignore
+Dockerfile
+
+.nvmrc
+.editorconfig
+.eslintrc
+prettier.config.js
+package-lock.json
+README.md

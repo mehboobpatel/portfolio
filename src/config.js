@@ -12,16 +12,16 @@ module.exports = {
     },
     {
       name: 'Twitter',
-      url: 'https://x.com/maheboo_patel',
+      url: 'https://x.com/maheboob__patel',
     },
     {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/maheboob-patel',
     },
-    {
-      name: 'Codepen',
-      url: 'https://codepen.io/',
-    },
+    // {
+    //   name: 'Codepen',
+    //   url: 'https://codepen.io/',
+    // },
   ],
 
   navLinks: [

@@ -7,7 +7,7 @@ module.exports = {
       'Chandrika Deb is an IIM alumnus who spearheads marketing initiatives at Tata Steel and is also a freelance tech blogger.',
     siteUrl: 'https://portfolio', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@maheboo_patel',
+    twitterUsername: '@maheboob__patel',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

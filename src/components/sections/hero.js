@@ -59,7 +59,7 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Namaste! My name is</h1>;
+  const one = <h1>Hello! My name is</h1>;
   const two = <h2 className="big-heading">Maheboob Patel</h2>;
   const three = <h3 className="medium-heading"> DevOps | Data | DevRel </h3>;
   const four = (
@@ -83,10 +83,10 @@ const Hero = () => {
   const five = (
     <a
       className="email-link"
-      href="https://chandrikadeb7.gumroad.com"
+      href="https://www.linkedin.com/in/maheboob-patel/"
       target="_blank"
       rel="noreferrer">
-      Check out my products!
+      Check out my linkedin!
     </a>
   );
 
