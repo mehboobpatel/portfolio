@@ -15,5 +15,6 @@ Dockerfile
 .editorconfig
 .eslintrc
 prettier.config.js
+swa-cli.config.json
 package-lock.json
 README.md

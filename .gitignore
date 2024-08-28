@@ -3,9 +3,12 @@
 node_modules
 yarn-error.log
 package-lock.json
+swa-cli.config.json
 
 # Build directory
 /public
 .DS_Store
 
 .vscode/
+
+.env
