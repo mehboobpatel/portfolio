@@ -105,23 +105,10 @@ const Footer = () => {
       </StyledSocialLinks>
 
       <StyledCredit tabindex="-1">
-        <a href="https://github.com/bchiang7/v4">
-          <div>Inspired by Brittany Chiang<br></br>
-          Built &amp; Revised by Maheboob Patel
-          </div>
+        <a href="https://maheboob.dev">
+          <div>Built by Maheboob Patel</div>
 
-          {githubInfo.stars && githubInfo.forks && (
-            <div className="github-stats">
-              <span>
-                <Icon name="Star" />
-                <span>{githubInfo.stars.toLocaleString()}</span>
-              </span>
-              <span>
-                <Icon name="Fork" />
-                <span>{githubInfo.forks.toLocaleString()}</span>
-              </span>
-            </div>
-          )}
+        
         </a>
       </StyledCredit>
     </StyledFooter>
